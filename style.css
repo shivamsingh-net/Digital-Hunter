@@ -1,0 +1,499 @@
+@font-face {
+    font-family: font;
+    src: url(./Audiowide-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: font;
+        background-color: black;
+}
+main{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    width: 100%;
+   color: rgb(206, 204, 204);
+    display: flex; align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 0px 20px;
+}
+#a{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#a img {
+    height: 60px;
+}
+#a h3{
+    font-size: 14px;
+    font-weight: 400;
+}
+#b{
+ display: flex;
+ align-items: center;
+ gap: 50px;
+ transition: all ease-in-out cubic-bezier(0.23, 1, 0.320, 1)
+}
+#b h3{
+    font-size: 12px;
+    font-weight: 300;
+}
+#b h3:hover{
+    scale: 0.9;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-color: #12BDA3;
+}
+
+#c button{
+    font-family: font;
+    font-weight: 400;
+   padding: 10px 40px;
+   border-radius: 20px;
+   border: none; 
+   font-size: 13px;
+   background-color: black;
+  color: rgb(206, 204, 204);
+   transition: all ease-in-out cubic-bezier(0.23, 1, 0.320, 1);
+   border: 1.5px solid #12BDA3;
+}
+#c button:hover{
+    cursor: pointer;
+    scale: 0.9;
+}
+section{
+    height: 100%;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url(./img1.png);
+    background-size: cover;
+}
+#left{
+height: 100%;
+width: 70%;
+/* background-color: red; */
+padding-left: 30px;
+color: rgb(206, 204, 204);
+}
+#left h4{
+    color: #12BDA3;
+ padding-top: 30px;
+ font-size: 35px;
+ font-weight: 400;
+}
+#left span{
+    color: #12BDA3;
+}
+#left h3{
+    line-height: 90px;
+    font-size: 100px;
+    font-weight: 400;
+}
+#left h5{
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+}
+#left p{
+    padding-top: 30px;
+    font-size: 13px;
+    font-weight: 400;
+}
+#left #info{
+    padding-top: 10px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+#left #info1 h1{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 400;
+       border: 1px solid #12BDA3;
+}
+#info #info1{
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+}
+#info #info1:hover{
+    box-shadow: inset -70px 0 15px -1px rgba(45, 212, 180, 0.8);
+}
+#left #info1 i{
+    font-size: 16px;
+padding-left: 15px;
+}
+#left #info2 h1{
+    font-size: 14px;
+    font-weight: 400;
+}
+#info2 i{
+ font-size: 17px;
+   border: 1px solid #12BDA3;
+   padding: 5px;
+   border-radius: 50px;
+}
+#info2 {
+display: flex;
+align-items: center;
+  gap: 10px;
+}
+#right{
+ height: 80%;
+ width: 30%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+gap: 40px;
+color: rgb(206, 204, 204);
+}
+#game{
+ display: flex;
+align-items: center;
+gap: 20px;
+}
+#vr{
+ display: flex;
+align-items: center;
+gap: 20px;
+padding-left: 20px;
+}
+#rocket{
+ display: flex;
+align-items: center;
+gap: 20px;
+text-align: center;
+padding-left: 100px;
+}
+i{
+color: #12BDA3;
+    padding: 10px;
+    font-size: 30px;
+}
+#right h3{
+  font-size: 11px;
+  font-weight: 400;
+}
+#bt{
+    margin-top: -10px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+padding: 10px 30px;
+
+}
+#bt h3{
+ font-size: 30px;
+ color: #12BDA3;
+}
+#bt p{
+    color: rgb(206, 204, 204);
+ font-size: 10px;
+ padding-top: 5px;
+}
+#e{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ height: 80%;
+ width: 25%;
+
+ border-radius: 20px 0 0 20px;
+}
+#f{
+    border-left: 1px solid  rgb(206, 204, 204);
+    text-align: center;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   height: 80%;
+ width: 15%;
+}
+#g{
+        border-left: 1px solid  rgb(206, 204, 204);
+    text-align: center;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+ width: 15%;
+}
+#h{
+        border-left: 1px solid  rgb(206, 204, 204);
+    text-align: center;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+ width: 25%;
+  border-radius: 0 20px 20px 0;
+}
+#pic1{
+ height: 200px;
+ width: 200px;
+ object-fit: cover;
+ position: absolute;
+ top: 580px;
+ right: 10px;
+
+} 
+#pic2{
+ height: 200px;
+ width: 200px;
+object-fit: cover;
+position: absolute;
+top: 620px;
+left: 64px;
+}
+
+#np{
+    margin-top: 50px;
+    display: flex;
+}
+#tg{
+ width: 85%;
+}
+#arrows{
+    height: fit-content;
+    margin-top: 70px;
+}
+#np #tg h4{
+    color: #12BDA3;
+ font-size: 34px;
+ text-align: center;
+ padding-left: 190px;
+}
+span{
+    color: white;
+}
+#np #arrows i{
+ border-radius: 50px;
+ border: 2px solid;
+ margin-left: 10px;
+ cursor: pointer;
+}
+.ri-arrow-left-line{
+    color: gray;
+}
+#page2{
+height: 70%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 20px;
+}
+#i{
+    padding: 0px 0px 30px 0px;
+    border: 1px solid #12BDA3;
+    border-radius: 30px;
+ height: 90%;
+ width: 30%;
+}
+#i1{
+    height: 60%;
+    width: 100%;
+    border-radius: 20px;
+}
+#i1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+#i2{
+    display: flex;
+    height: 40%;
+    width: 100%;
+}
+#i2 #left{
+ height: 100%;
+ width: 70%;
+}
+p{
+ padding-bottom: 20px;
+}
+.ri-apple-fill{
+    color: rgb(221, 219, 219);
+}
+#i2 #right{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50px;
+    margin-top: 80px;
+    margin-left: 40px;
+    border: 2px solid #12BDA3;
+    color: #12BDA3;
+}
+#i2 #right i{
+    cursor: pointer;
+}
+#j{
+     padding: 0px 0px 30px 0px;
+    border: 1px solid #12BDA3;
+    border-radius: 30px;
+    border-radius: 20px;
+height: 90%;
+ width: 30%;
+}
+.ri-meta-fill{
+    color: rgb(216, 215, 215);
+}
+#k{
+     padding: 0px 0px 30px 0px;
+    border: 1px solid #12BDA3;
+    border-radius: 30px;
+    border-radius: 20px;
+height: 90%;
+ width: 30%;
+}
+#banner{
+ width: 100%;
+}
+#banner h3{
+ text-align: center;
+ font-size: 35px;
+ padding-top: 55px;
+ color: white;
+}
+#banner span{
+    color: #12BDA3;
+}
+footer{
+    height: 220px;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./last.png);
+    background-size: cover;
+}
+#x{
+    padding: 30px 40px;
+    border-radius: 20px 0px 0px 20px;
+ height: 100%;
+ width: 40%;
+}
+#x h3{
+color: white;
+font-size: 30px;
+}
+#x h3 span{
+    color: #12BDA3;
+}
+#x p{
+    color: white;
+ font-size: 20px;
+ padding-top: 30px;
+}
+#x button{
+ padding: 10px 70px;
+ border-radius: 10px;
+ border:1.5px solid #12BDA3;
+ color: white;
+ background-color: black;
+     transition: box-shadow 0.3s ease;
+
+}
+#x button:hover{
+    cursor: pointer;
+ box-shadow: inset -70px 0 15px -1px rgba(45, 212, 180, 0.8);
+}
+#y{
+color: rgb(205, 204, 204);
+padding-top: 30px;
+height: 100%;
+width: 20%;
+}
+#y img{
+    height: 50px;
+}
+#one{
+ display: flex;
+ align-items: center;
+}
+#one h3{
+ font-size: 13px;
+}
+#y p{
+ padding-top: 20px;
+    padding-bottom: 40px;
+}
+#y i{
+    cursor: pointer;
+margin-left: 17px;
+    font-size: 16px;
+    border-radius: 50px;
+    color: rgb(205, 204, 204);
+    border: 1.2px solid #12BDA3;
+}
+#y .ri-youtube-fill{
+   color: #12BDA3;
+}
+#z{
+color: rgb(205, 204, 204);
+height: 100%;
+width: 30%;
+border-radius: 0px 20px 20px 0px;
+}
+#z h3{
+ font-size: 15px;
+ font-weight: 400;
+ cursor: pointer;
+ color: rgba(240, 248, 255, 0.511);
+}
+#z h3:hover{
+    color: aliceblue;
+}
+#z h4{
+ padding-top: 50px;
+ padding-bottom: 20px;
+ font-size: 15px;
+ text-align: center;
+ 
+}
+#z #mail{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#z  i{
+    font-size: 25px;
+    padding-right: 10px;
+}
+#z #phone h3{
+    padding-right: 40px;
+}
+#z #location h3{
+    padding-right: 50px;
+}
+#z #phone{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#z #location{
+display: flex;
+align-items: center;
+justify-content: center;
+}
